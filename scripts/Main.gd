@@ -46,20 +46,12 @@ func _process(delta):
         canPull = true
         if not get_node("flag/ropeSfx").playing:
           get_node("flag/ropeSfx").play()
-        $flag.set_position($flag.get_position() - Vector2(0,15))
+        $flag.set_position($flag.get_position() - Vector2(0,15)) #possibly set this using liner_interpolation so it doesn't jump
         if($flag.get_position().y <= 185):
           roundComplete()
           
-          
-          
-#    t += delta * 0.4
-#
-#    $Sprite.position = $A.position.linear_interpolate($B.position, t)
-
-
 func _on_Score_timeout():
   $HUD.updateScore()
-
 
 func _on_cooldown_timeout():
   counting = false
