@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/flag_flapping.mp3-25dc3edf42628bc196e783945a075f3c.mp3str"
+
+[deps]
+
+source_file="res://assets/flag_flapping.mp3"
+dest_files=[ "res://.import/flag_flapping.mp3-25dc3edf42628bc196e783945a075f3c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
